@@ -44,7 +44,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-
+//BY ALTGANI
 
 
 class TimeLogActivity : BaseActivity(), View.OnClickListener {
