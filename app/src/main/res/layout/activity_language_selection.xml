@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/language_change_user"
+>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+    >
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/choose_lang"
+                  android:textSize="@dimen/sp_16"
+                  android:textAllCaps="true"
+                  android:textColor="@color/blue"
+                  android:fontFamily="@font/montserrat_bold"
+                  android:gravity="center"
+                  android:id="@+id/txtChooseLang"
+                  android:layout_marginTop="@dimen/dp_270"
+        />
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="@string/english"
+                android:textSize="@dimen/sp_18"
+                android:layout_below="@id/txtChooseLang"
+                android:layout_marginTop="@dimen/dp_30"
+                android:textColor="@color/white"
+                android:id="@+id/btnEnglishLang"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginEnd="@dimen/dp_35"
+                android:layout_marginStart="@dimen/dp_35"
+        />
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_below="@id/btnEnglishLang"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/arabic"
+                android:textSize="@dimen/sp_18"
+                android:textAllCaps="false"
+                android:id="@+id/btnArabicLang"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginEnd="@dimen/dp_35"
+                android:layout_marginStart="@dimen/dp_35"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

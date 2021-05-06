@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_130"
+              android:layout_marginEnd="@dimen/dp_5"
+              android:layout_marginBottom="@dimen/dp_5"
+
+>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/dp_5"
+            android:elevation="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_5"
+            android:id="@+id/cardLayoutML"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+        >
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/text_color_dark"
+                      android:textSize="@dimen/sp_13"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:id="@+id/txtMonthNameML"
+
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/dp_10"
+                      android:textColor="@color/text_color_dark"
+                      android:textSize="@dimen/sp_13"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:id="@+id/txtYearML"
+
+            />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

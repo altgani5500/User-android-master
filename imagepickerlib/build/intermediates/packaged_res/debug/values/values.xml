@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorMainBackground">#E0F2F1</color>
+    <color name="colorPrimary">#2aabe1</color>
+    <color name="color_blue">#0b97b9</color>
+    <color name="grey">#9D9B9C</color>
+    <color name="grey_bg_color">#f4f4f4</color>
+    <color name="grey_bg_color2">#f5f5f5</color>
+    <color name="grey_light">#b0b0b0</color>
+    <color name="grey_lighter">#D6D6D6</color>
+    <color name="grey_lighter2">#b8b8b8</color>
+    <color name="grey_lighter3">#ededed</color>
+    <color name="grey_lighter4">#EBEBEB</color>
+    <color name="semi_black">#CC000000</color>
+    <color name="semi_transparent">#20000000</color>
+    <color name="text_color_dark">#555555</color>
+    <color name="text_color_darker">#333333</color>
+    <color name="text_color_light">#888888</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_light">#50ffffff</color>
+    <color name="white_lighter">#80ffffff</color>
+    <string name="app_name">ImagePickerLib</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <declare-styleable name="CropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="centerCrop" value="2"/>
+            <enum name="centerInside" value="3"/>
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+        </attr>
+        <attr format="boolean" name="cropAutoZoomEnabled"/>
+        <attr format="integer" name="cropMaxZoom"/>
+        <attr format="boolean" name="cropMultiTouchEnabled"/>
+        <attr format="boolean" name="cropFixAspectRatio"/>
+        <attr format="integer" name="cropAspectRatioX"/>
+        <attr format="integer" name="cropAspectRatioY"/>
+        <attr format="float" name="cropInitialCropWindowPaddingRatio"/>
+        <attr format="dimension" name="cropBorderLineThickness"/>
+        <attr format="color" name="cropBorderLineColor"/>
+        <attr format="dimension" name="cropBorderCornerThickness"/>
+        <attr format="dimension" name="cropBorderCornerOffset"/>
+        <attr format="dimension" name="cropBorderCornerLength"/>
+        <attr format="color" name="cropBorderCornerColor"/>
+        <attr format="dimension" name="cropGuidelinesThickness"/>
+        <attr format="color" name="cropGuidelinesColor"/>
+        <attr format="color" name="cropBackgroundColor"/>
+        <attr format="dimension" name="cropSnapRadius"/>
+        <attr format="dimension" name="cropTouchRadius"/>
+        <attr format="boolean" name="cropSaveBitmapToInstanceState"/>
+        <attr format="boolean" name="cropShowCropOverlay"/>
+        <attr format="boolean" name="cropShowProgressBar"/>
+        <attr format="dimension" name="cropMinCropWindowWidth"/>
+        <attr format="dimension" name="cropMinCropWindowHeight"/>
+        <attr format="float" name="cropMinCropResultWidthPX"/>
+        <attr format="float" name="cropMinCropResultHeightPX"/>
+        <attr format="float" name="cropMaxCropResultWidthPX"/>
+        <attr format="float" name="cropMaxCropResultHeightPX"/>
+        <attr format="boolean" name="cropFlipHorizontally"/>
+        <attr format="boolean" name="cropFlipVertically"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTextView">
+        <attr format="string" name="setFont"/>
+    </declare-styleable>
+    <declare-styleable name="DefaultEditText">
+        <attr format="string" name="defaultEdtFont"/>
+    </declare-styleable>
+    <declare-styleable name="TagsEditText">
+        <attr format="boolean" name="allowSpaceInTag"/>
+        <attr format="color" name="tagsTextColor"/>
+        <attr format="dimension" name="tagsTextSize"/>
+        <attr format="integer" name="tagsBackground"/>
+        <attr format="integer" name="tagsCloseImageLeft"/>
+        <attr format="integer" name="tagsCloseImageRight"/>
+        <attr format="dimension" name="tagsCloseImagePadding"/>
+        <attr format="dimension" name="tagsPaddingLeft"/>
+        <attr format="dimension" name="tagsPaddingRight"/>
+        <attr format="dimension" name="tagsPaddingTop"/>
+        <attr format="dimension" name="tagsPaddingBottom"/>
+    </declare-styleable>
+</resources>

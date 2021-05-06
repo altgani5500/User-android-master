@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_10"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgSettingsBack"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_16"
+                  android:textAlignment="viewStart"
+                  android:text="@string/settings"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginStart="@dimen/dp_10"
+                  android:layout_marginEnd="@dimen/dp_10"
+                  android:layout_marginTop="@dimen/dp_5"
+
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_45"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:id="@+id/llAccountSettings"
+                      android:gravity="center_vertical"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/text_bg"
+                      android:textAlignment="viewStart"
+                      android:text="@string/account_setting"
+                      android:textSize="@dimen/sp_13"
+                      android:layout_marginStart="@dimen/dp_10"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_45"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:gravity="center_vertical"
+                      android:id="@+id/llNotifictaionSettings"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/text_bg"
+                      android:text="@string/notification"
+                      android:textSize="@dimen/sp_13"
+                      android:textAlignment="viewStart"
+                      android:layout_marginStart="@dimen/dp_10"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_45"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:gravity="center_vertical"
+                      android:id="@+id/llAdvanceSettings"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/text_bg"
+                      android:text="@string/advanced_settings"
+                      android:textSize="@dimen/sp_13"
+                      android:textAlignment="viewStart"
+                      android:layout_marginStart="@dimen/dp_10"
+            />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dp_45"-->
+<!--            android:layout_marginTop="@dimen/dp_5"-->
+<!--            android:background="@color/white"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/dp_10"-->
+<!--                android:fontFamily="@font/montserrat_regular"-->
+<!--                android:text="@string/app_update"-->
+<!--                android:textAlignment="viewStart"-->
+<!--                android:textColor="@color/text_bg"-->
+<!--                android:textSize="@dimen/sp_13" />-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_45"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:gravity="center_vertical"
+                      android:id="@+id/llAddNetworks"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/text_bg"
+                      android:text="@string/add_work_network"
+                      android:textSize="@dimen/sp_13"
+                      android:textAlignment="viewStart"
+                      android:layout_marginStart="@dimen/dp_10"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChangeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/change_language"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_bg"
+            android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rtchagas:pingplacepicker:1.1.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7c62eac7c2d457e7753a93a5fc8a2b9/pingplacepicker-1.1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7c62eac7c2d457e7753a93a5fc8a2b9/pingplacepicker-1.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7c62eac7c2d457e7753a93a5fc8a2b9/pingplacepicker-1.1.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rtchagas/pingplacepicker/1.1.6/7650f172d1c81cb7b3109a692075d8ccf8669108/pingplacepicker-1.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

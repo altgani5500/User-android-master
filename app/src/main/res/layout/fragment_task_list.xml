@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.TaskListFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/dp_10"
+
+            android:background="@drawable/whiteb"
+                  android:layout_alignParentEnd="true"
+                  android:text="@string/list"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:textColor="@color/text_light"
+                  android:textSize="@dimen/sp_13"
+                  android:drawableEnd="@drawable/dropdown"
+                  android:drawablePadding="@dimen/dp_10"
+                  android:drawableTint="@color/text_light"
+                  android:padding="@dimen/dp_10"
+                  android:id="@+id/txtListScheduleFrag"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtListScheduleFrag"
+                android:id="@+id/recyclerTasks"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_centerInParent="true"
+                      android:visibility="gone"
+                      android:id="@+id/llEmptyTask"
+        >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/task_list"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:fontFamily="@font/montserrat_regular"
+                      android:layout_height="wrap_content"
+                      android:text="@string/empty_task_list"
+                      android:textColor="@color/text_bg"
+                      android:textSize="@dimen/sp_15"
+            />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:id="@+id/llErrorFragScheduleTask"
+                          android:gravity="center"
+                          android:visibility="gone"
+
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/sp_15"
+
+                          android:textAlignment="center"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:text="@string/no_internet"
+                />
+
+                <Button android:layout_width="@dimen/dp_150"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@drawable/button_background"
+                        android:text="@string/retry"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:layout_marginTop="@dimen/dp_35"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:id="@+id/btnRetryScheduleTask"
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

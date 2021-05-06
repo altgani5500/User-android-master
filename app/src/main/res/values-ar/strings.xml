@@ -1,0 +1,495 @@
+<resources>
+    <string name="app_name">المستعمل</string>
+
+
+
+    <string name="agree">تاكيد</string>
+    <string name="notAgree">تراجع</string>
+    <string name="TextOk">هل تريد الالتحاق بالوظيفه</string>
+    <string name="network_wifi">انت غير متصل علي الواي فاي</string>
+    <string name="processdone">تمت العمليه بنجاح</string>
+    <string name="nearjobs"> ابحث بالجوار </string>
+    <!--KtAlert Class-->
+    <string name="yes">نعم فعلا</string>
+    <string name="no">لا</string>
+
+    <string name="savedJob">محفوظ</string>
+    <string name="loginButton">دخول</string>
+    <!--permission util class message-->
+    <string name="permission_required">الإذن مطلوب</string>
+    <string name="permission_denied">الإذن بالتخزين مرفوض. يمكنك تفعيل الإذن عن طريق الاعدادات.</string>
+    <string name="prmission_alert">يحتاج التطبيق إلى هذا الإذن لتخزين الملفات على سعة تخزين الهاتف. هل انت متأكد أنك
+        تريدالبرنامج يحتاج الإذن لتخزين الملفات في ذاكرة الهاتف. هل انت متأكد من عدم رغبتك في اعطاء الإذن؟
+    </string>
+    <string name="camera_permission">البرنامج يحتاج الى الإذن لأخذ الصور عن طريق كاميرا الهاتف. هل أنت متأكد من عدم
+        رغبتك في اعطاء الإذن؟
+    </string>
+    <string name="location_permission">البرنامج يحتاج الإذن لتحديد موقعك. هل أنت متأكد من عدم رغبتك في اعطاء الإذن؟
+    </string>
+    <!--permissions-->
+    <string name="grant">موافق</string>
+    <string name="deny">مرفوض</string>
+    <string name="camera">كاميرا</string>
+    <string name="gallery">ملف الصور</string>
+    <string name="pick_pdf">Pick Pdf</string>
+
+    <string name="title_activity_welcome">الشاشة الرئيسية</string>
+
+    <!--walkthrough-->
+    <string name="next">التالي</string>
+    <string name="skip">تجاوز</string>
+    <string name="start">موافق</string>
+
+    <string name="slide_one_title">عرض الوظائف الجزئية</string>
+    <string name="slide_one_desc">اطلع على جميع الوظائف الجزئية المتوفرة حاليا في منطقتك</string>
+
+    <string name="slide_two_title">تواصل مع الشركات</string>
+    <string name="slide_two_desc">يمكنك التواصل مع المنشأت المقدمة للوظائف الجزئية</string>
+
+    <string name="slide_three_title">عرض جدول العمل</string>
+    <string name="slide_three_desc">يمكنك الاطلاع على جدول وساعات العمل والتحدث مع المشرف المختص بتعديل الجدول</string>
+
+    <string name="slide_four_title">عرض المهام المحددة</string>
+    <string name="slide_four_desc">يمكنك الإطلاع على المهام المحددة لك ومعرفة المهام المنجزة والمتبقية</string>
+
+    <string name="build_history">قم ببناء سجلك العملي</string>
+    <string name="build_history_text">سجلك العملي سيعرض للشركات مستوى إلتزامك لبيئة العمل</string>
+
+    <string name="view_tiem_logs">اطلع على سجلك العملي</string>
+    <string name="view_time_text">يمكنك الاطلاع على سجلك العملي من ساعات العمل والمهام المكتملة وتقييمك</string>
+
+    <string name="play_again_desc">لرؤية شريط الترحيب مرة أخرى ، انتقل إلى الإعدادات -> التطبيقات -> شريط التمرير
+        الترحيبي -> امسح
+                البيانات
+    </string>
+    <string name="play_again">العب مرة أخرى</string>
+
+    <string name="array_dot_active">صفيف نقطة نشطة</string>
+    <string name="array_dot_inactive">صفيف لا</string>
+
+
+    <!--validations-->
+    <string name="error_invalid_email">رجاءا أدخل بريدك الإلكتروني</string>
+    <string name="error_invalid_password">من فضلك أدخل رقمك السري</string>
+    <string name="no_fname">فضلاً ادخل الاسم الأول</string>
+    <string name="no_lname">فضلاً ادخل الاسم الاخير</string>
+    <string name="no_email">فضلاً ادخل البريد الالكتروني</string>
+    <string name="no_nationality">فضلاً حدد جنسيتك</string>
+    <string name="no_national_id">فضلاً ادخل رقم الهوية الوطنية</string>
+    <string name="national_id_exist">رقم الهويه موجود مسبقا</string>
+    <string name="valid_national_id">فضلا ادخل رقم السجل المدني بالشكل الصحيح</string>
+    <string name="no_user_name">ادخل اسم المستخدم</string>
+    <string name="no_gender">يرجى اختيار جنسك</string>
+    <string name="no_password">فضلاً ادخل كلمة المرور</string>
+    <string name="no_confrim_password">فضلاً قم بتأكيد كلمة المرور</string>
+    <string name="no_profile_image">فضلاً ارفق صورتك الشخصية</string>
+    <string name="invalid_password">كلمة المرور يجب أن تحتوي على رمز واحد خاص ورقم وحرف كبير وأن لا يقل عن 6 خانات.
+    </string>
+    <string name="error_password_not_match">كلمة المرور وتأكيد كلمة المرور غير متطابقين</string>
+    <string name="no_confirmation">فضلاً قم بتأكيد عمرك</string>
+    <string name="no_agree">فضلاً وافق على الشروط والأحكام</string>
+    <string name="deny_location_access">يرجى منح التصاريح للوصول إلى موقعك الحالي</string>
+    <string name="deny_wifi_access">Please grant permissions to access your wifi</string>
+
+    <string name="no_internet">فضلاً تحقق من اتصالك بشبكة الاتصال</string>
+
+    <!--login-->
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot">استعادة كلمة المرور او اسم المستخدم؟</string>
+    <string name="no_account">ليس لديك حساب؟</string>
+    <string name="register_here">سجل هنا !</string>
+    <string name="forgot_caps">السر</string>
+    <string name="username_or_password">اسم المستخدم أو كلمة المرور؟</string>
+    <string name="or">أو</string>
+
+    <!--register-->
+    <string name="register_header">لنبدأ مع</string>
+    <string name="register">تسجيل</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="nationality">الجنسية</string>
+    <string name="national_id">رقم الهوية الوطنية</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمه السر</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="comfirmation">تأكيد العمر فوق 16 سنة</string>
+    <string name="agreement">أنا أوافق على<u>الأحكام والشروط</u>
+    </string>
+    <string name="terms_conditions">الأحكام والشروط</string>
+    <string name="terms">الأحكام والشروط</string>
+
+
+    <string name="submit">ارسال</string>
+    <string name="submits">تسجيل</string>
+    <string name="submitss">تطبيق</string>
+    <string name="already_account">هل لديك حساب؟</string>
+    <string name="login_here">للدخول للحساب</string>
+    <string name="note">ملاحظة: لن يتم عرض هويتك الوطنية لأي شخص. يتم استخدامه فقط لتجنب الازدواجية في الحسابات</string>
+
+    <!-- msg strings-->
+    <string name="login_successful">تسجيل الدخول ناجح</string>
+    <string name="signup_succcessful">الاشتراك بنجاح</string>
+
+    <string name="splash_text">العثور على وظيفة بدوام جزئي الصحيح ، كسب المال ، وبناء تاريخ العمل الخاص بك والمنافسة
+    </string>
+
+    <!-- job list-->
+    <string name="saveit">حفظ</string>
+    <string name="apply">تقدم</string>
+    <string name="applied">تم التقديم</string>
+    <string name="home">الرئيسية</string>
+    <string name="map_lable">مستخدم بدوام جزئي</string>
+
+    <!--location permissions-->
+    <string name="no_location_permission">نأمل اعطاء الإذن للوصول لموقعك.</string>
+    <string name="no_location_recorded">نأمل التأكد من جودة اتصالك بشبكة الانترنت مع تشغيل خدمات تحديد موقعك</string>
+    <string name="grant_location_permissions">قم باعطاء الموافقة للوصول لموقعك</string>
+
+
+    <!--job details-->
+    <string name="job_detail">الوصف الوظيفي</string>
+    <string name="details">تفاصيل</string>
+    <string name="applicants">المتقدمين</string>
+    <string name="job_title">المسمى الوظيفي</string>
+    <string name="part_time_type">نوع العمل الجزئي</string>
+    <string name="location">الموقع</string>
+    <string name="branch_name">اسم الفرع</string>
+    <string name="description">التفاصيل</string>
+    <string name="currency">العملة</string>
+    <string name="number_of_applicants">عدد المتقدمين</string>
+    <string name="hourly_rate">قيمة الساعة</string>
+    <string name="working_hours">ساعات العمل</string>
+    <string name="total_hour_per_week">اجمالي ساعات العمل الاسبوعي</string>
+    <string name="work_experience">الخبرة</string>
+    <string name="requirement">المتطلبات</string>
+    <string name="benefits">الحوافز</string>
+    <string name="work_guidelines">قوانين العمل</string>
+    <string name="enterprise_detail">تفاصيل المنشأة</string>
+    <string name="enterprise_name">اسم المنشأة</string>
+    <string name="enterprise_category">مجال عمل المنشأة</string>
+    <string name="enolled_partime_workers">العاملين المسجلين بالعمل الجزئي لدى المنشأة</string>
+    <string name="general_info">معلومات عامة</string>
+    <string name="can_not_apply">You have already applied to this job</string>
+
+
+    <string name="job_saved">تم حفظ الوظيفة بنجاح</string>
+    <string name="job_unsaved">تم الغاء حفظ الوظيفة .</string>
+
+    <string name="viewed">تمت المشاهدة</string>
+    <string name="new_job">جديد</string>
+    <string name="saved">محفوظ</string>
+    <string name="none_job">لا يوجد</string>
+    <string name="none_of_these">لا يوجد</string>
+
+    <string name="apply_successful">تم التقديم على الوظيفة بنجاح</string>
+    <string name="unapply_successcull">الوظيفة غير مطبقة بنجاح.</string>
+    <!-- side menu-->
+    <string name="callus">اتصل بنا</string>
+    <string name="send">مراسله</string>
+    <string name="saved_job">الوظائف المحفوظة</string>
+    <string name="schedule_task">الجدول والمهام</string>
+    <string name="time_logs">الحضور والانصراف</string>
+    <string name="notifications">المنبهات</string>
+    <string name="message">الرسائل</string>
+    <string name="settings">الاعدادات</string>
+    <string name="my_history">سجلي</string>
+    <string name="about_us">من نحن</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="login_msg">احصل على حساب بدوام جزئي لمواصلة استكشاف</string>
+
+    <!--contact us-->
+    <string name="name">اسم</string>
+    <string name="describe_your_problem">اشرح استفسارك</string>
+    <string name="type_here">اكتب هنا...</string>
+    <string name="send_message">ارسال الرسالة</string>
+    <string name="no_name">نأمل ادخال اسمك</string>
+    <string name="no_problem">نأمل ادخال او شرح المشكلة</string>
+
+    <string name="users">الأفراد</string>
+    <string name="enterprise">الشركات</string>
+
+    <string name="retry">اعادة المحاولة</string>
+    <string name="no_joblist">نأسف ! لم يتم العثور على وظائف</string>
+    <string name="credited">وظائف تسجل وتقيم</string>
+    <string name="credited_jobs">وظائف مسجلة</string>
+    <string name="non_credited_jobs">وظائف غير مسجلة</string>
+
+    <string name="exit_text">فضلا انقر مرة اخرى للخروج</string>
+
+    <string name="api_key">AIzaSyBImLrzprC80vF4RHbVEX62uOVZ3YTOJgU</string>
+
+    <!--profile-->
+    <string name="profile">الملف الشخصي</string>
+    <string name="edit">تعديل</string>
+    <string name="emaill">البريد الإلكتروني</string>
+    <string name="company_name">اسم الشركة</string>
+    <string name="educational_level">مستوى التعليم</string>
+    <string name="educational_detail">تفاصيل التعليم</string>
+    <string name="cv_or_certificates">ارفاق السيرة الذاتية</string>
+    <string name="all_task">جميع المهام</string>
+    <string name="complete">مكتمل</string>
+    <string name="completed">منجزة</string>
+    <string name="pending">تحت المراجعة</string>
+    <string name="pending_evaluation">Pending Evaluation</string>
+    <string name="in_process">جاري العمل به</string>
+
+    <string name="total_work_history">مجمل السجل </string>
+    <string name="past_companies">المنشات السابقة</string>
+    <string name="total_no_hours">مجمل ساعات العمل المطبقة</string>
+
+    <!-- edit-->
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="address">العنوان</string>
+    <string name="address_note">*مشاركة موقعك يساعد لقبولك في الوظائف القريبة منك</string>
+    <string name="resume">السيرة الذاتية</string>
+    <string name="save">حفظ</string>
+    <string name="age">العمر</string>
+    <string name="upload_cv">ارفق السيرة الذاتية</string>
+    <string name="upload_max_ceritifactes">ارفاق 10 شهادات كحد أقصى</string>
+    <string name="pickdoc">قم باختيار ملف pdf</string>
+    <string name="resume_format">فضلا ارفق ملف السيرة الذاتية بصيغة pdf</string>
+
+
+    <string name="age_one">16-19</string>
+    <string name="age_two">20-25</string>
+    <string name="age_three">26-35</string>
+    <string name="age_four">36-60</string>
+
+    <string name="no_google_service">Google Play Services is not Available</string>
+    <string name="graduate">خريج</string>
+    <string name="undergraduate">جامعي</string>
+    <string name="postgraduate">خريج دراسات عليا</string>
+
+    <string name="s_female">انثى</string>
+    <string name="s_male">ذكر</string>
+
+    <string name="none">-</string>
+
+    <!--settings-->
+    <string name="account_setting">اعدادات الحساب</string>
+    <string name="notification">المنبهات</string>
+    <string name="advanced_settings">الاعدادات المتقدمة</string>
+    <string name="app_update">التحديثات</string>
+    <string name="add_work_network">اضف شبكة الاتصال في العمل</string>
+    <string name="change_language">تغيير اللغة</string>
+
+
+    <!--resign requist-->
+    <string name="resign_requist">هل متاكد من ارسال الطلب ؟</string>
+
+    <!--logout-->
+    <string name="logout_title">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="cancel">إلغاء</string>
+
+    <!--change language-->
+    <string name="choose_lang">اختر اللغة</string>
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+
+    <string name="enter_your_registered_email">فضلاً ادخل البريد الالكتروني المسجل مسبقاً</string>
+    <string name="invalid_email">يرجى إدخال البريد الإلكتروني الصحيح</string>
+
+    <!--account settings-->
+    <string name="edit_email">تحرير البريد الإلكتروني</string>
+    <string name="change_national_id">تغيير الهوية الوطنية</string>
+    <string name="change_password">غير كلمة السر</string>
+    <string name="national_id_dialog">فضلاً تواصل معنا لتغيير رقم الهوية الوطنية</string>
+    <string name="ok">حسنا</string>
+    <string name="enter_old_password">أدخل كلمة المرور القديمة</string>
+    <string name="enter_new_password">أدخل كلمة مرور جديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+
+    <!--  notifactions-->
+    <string name="no_notification">لا يوجد إشعار</string>
+
+    <!--advance settings-->
+    <string name="advance_text">كلما زاد العرض ، زادت فرصة حصولك على وظيفة بدوام جزئي.</string>
+    <string name="complete_profile">الملف الشخصي الكامل</string>
+    <string name="grades">درجات</string>
+    <string name="certificates">شهادات</string>
+    <string name="company_worked_or_working">الشركات التي تعمل / تعمل حاليا في</string>
+    <string name="show_work_hours">عرض ساعات العمل</string>
+    <string name="all">الكل</string>
+    <string name="only_enterprise">فقط للمؤسسات التي أتقدم إليها</string>
+    <string name="gender">جنس</string>
+    <string name="cv">السيرة الذاتية</string>
+
+    <!--filters-->
+    <string name="filter">فلتر</string>
+    <string name="industry">مجال العمل</string>
+    <string name="hours_per_week">ساعات العمل للأسبوع</string>
+    <string name="hour_paid_rate">اجر الساعة</string>
+    <string name="apply_filter">تطبيق</string>
+    <string name="reset">اعادة</string>
+    <string name="non_credited">غير مسجل</string>
+    <string name="search">بحث</string>
+    <string name="select_all">اختر الكل</string>
+    <string name="none_hour_rate">لا شيء</string>
+
+
+    <!--location filter-->
+    <string name="autoDetectLocation">تحديد الموقع تلقائيا</string>
+    <string name="country">البلد</string>
+    <string name="state">المنطقة</string>
+    <string name="city">المدينة</string>
+    <string name="select_country">اختر دولة</string>
+    <string name="select_state">اختر الدولة</string>
+    <string name="service_not_available">غير قادر على تحديد موقع عنوانك</string>
+
+
+    <!--Change password-->
+    <string name="no_old_passowrd">الرجاء إدخال كلمة المرور القديمة</string>
+
+
+    <!--message-->
+    <string name="no_message">قائمة الرسائل فارغه.</string>
+
+    <!--chat-->
+    <string name="save_to_calendar">حفظ في تقويم الهاتف</string>
+    <string name="type_msg">اكتب رسالتك هنا</string>
+    <string name="interview_date">تاريخ المقابلة</string>
+    <string name="interview_time">وقت المقابلة</string>
+
+    <!--upload document-->
+    <string name="delete">حذف</string>
+    <string name="permanently_delete_file">سوف يتم حذف الملف كليا، هل انت متأكد من الرغبة بحذف المرفق.</string>
+
+    <string name="no_data_found">لاتوجد بيانات</string>
+
+    <!--info dailog-->
+    <string name="credited_text">ساعات عملك واوقات الحضور والانصراف والمهام مسجلة.</string>
+
+    <string name="non_credited_text">ساعات عملك واوقات الحضور والانصراف والمهام غير مسجلة.</string>
+
+    <!--notification settings-->
+    <string name="notifiction_settings">اعدادات التنبيهات</string>
+    <string name="job_update">تحديث وظائف</string>
+    <string name="task">المهام</string>
+    <string name="schedule_update">تحديث جدول العمل</string>
+
+    <!-- schedule tasks-->
+    <string name="task_list">قائمة المهام</string>
+    <string name="calendar_view">التقويم</string>
+    <string name="not_enrolled">لست مسجل في أي وظيفة</string>
+
+    <string name="list">قائمة</string>
+    <string name="empty_task_list">قائمة مهامك فارغة</string>
+    <string name="time_boound">مقيدة بوقت</string>
+    <string name="time_bound">المهام المقيدة بوقت</string>
+    <string name="continous">المهام المستمرة</string>
+
+    <!--calendar view-->
+
+    <string name="calendar">التقويم !</string>
+    <string name="task_name">اسم المهمة</string>
+    <string name="task_type">نوع المهمة</string>
+    <string name="scheduler">مسؤول الجدول</string>
+    <string name="rating">تقييم</string>
+    <string name="reschedule_request">طلب اعادة جدولة</string>
+    <string name="revaluation">اعادة تقييم</string>
+    <string name="reevaluation">اعادة تقييم</string>
+    <string name="rescheduled">طلب اعادة جدولة</string>
+    <string name="interview">مقابلة</string>
+    <string name="clariifcation">توضيحات</string>
+    <string name="group_chat">محادثة الأعضاء</string>
+
+
+    <!-- task History-->
+    <string name="task_history">سجل المهام</string>
+
+    <!--Time log-->
+    <string name="time_log_history">سجل الحضور والانصراف</string>
+    <string name="reason_dialog_title">اسباب للخروج المبكر/ الحضور المتأخر</string>
+    <string name="attach_image">ارفق صورة</string>
+    <string name="no_reason">فضلا، أدخل السبب</string>
+
+    <!--//month names-->
+
+    <string name="january">يناير</string>
+    <string name="february">فبراير</string>
+    <string name="march">مارس</string>
+    <string name="april">ابريل</string>
+    <string name="may">مايو</string>
+    <string name="june">يونيو</string>
+    <string name="july">يوليو</string>
+    <string name="august">اغسطس</string>
+    <string name="september">سبتمبر</string>
+    <string name="october">اكتوبر</string>
+    <string name="november">نوفمبر</string>
+    <string name="december">ديسمبر</string>
+
+
+    <string name="total_hours_worked">اجمالي ساعات العمل</string>
+    <string name="week">الاسبوع</string>
+
+
+    <string name="hours_out_of">ساعة من</string>
+    <string name="hours">ساعة</string>
+
+    <string name="weekly_hours">الساعات الاسبوعية</string>
+    <string name="date">التاريخ</string>
+    <string name="actual_schedule">الجدول الفعلي</string>
+    <string name="punch_in">تسجيل الحضور</string>
+    <string name="punch_out">تسجيل الانصراف</string>
+    <string name="time_calculation">حساب الوقت</string>
+    <string name="accepted">تمت الموافقة</string>
+    <string name="early_hour">الساعة المبكرة</string>
+    <string name="undecided">لم يحدد</string>
+    <string name="reason">السبب</string>
+    <string name="declined">تم الرفض</string>
+    <string name="rejected">مرفوض</string>
+    <string name="late_hour">الساعة المتأخرة</string>
+    <string name="registeration_request">طلب استقالة</string>
+
+    <string name="resignation_request">طلب استقالة</string>
+    <string name="resignation_sent">تم ارسال طلب الاستقالة</string>
+    <!--M4 add network-->
+    <string name="searching_wifi">البحث عن شبكة اتصال</string>
+    <string name="available_network">شبكات الاتصال المتوفرة</string>
+    <string name="turn_on_wifi">فضلا، قم بتشغيل خاصية الواي فاي</string>
+    <string name="no_wifi_list">لا يوجد شبكات اتصال</string>
+    <string name="wifi">الواي فاي</string>
+
+
+    <!-- my history-->
+    <string name="overall_analytics">تحليل شامل</string>
+    <string name="all_tasks_assigned">اجمالي المهام المناطة</string>
+
+    <string name="jan">يناير</string>
+    <string name="feb">فبراير</string>
+    <string name="mar">مارس</string>
+    <string name="apr">ابريل</string>
+    <string name="jun">يونيو</string>
+    <string name="jul">يوليو</string>
+    <string name="aug">اغسطس</string>
+    <string name="sep">سبتمبر</string>
+    <string name="oct">اكتوبر</string>
+    <string name="nov">نوفمبر</string>
+    <string name="dec">ديسمبر</string>
+
+    <!--task detail-->
+    <string name="task_detail">Task detail</string>
+    <string name="execution_date_time">تاريخ ووقت التنفيذ</string>
+    <string name="creation_date_time">تاريخ ووقت الاصدار</string>
+    <string name="done">تمت</string>
+    <string name="reschedule_request_sent">تم ارسال طلب اعادة جدولة</string>
+    <string name="revaluate">اعادة تقييم</string>
+    <string name="start_task">البدء</string>
+
+
+
+    <!-- add work network-->
+    <string name="enabling_wifi">خاصية الواي فاي مغلقة.. جاري التفعيل</string>
+    <string name="connect_to_wifi">نأمل الاتصال مع</string>
+    <string name="network">الشبكة</string>
+
+    <string name="no_network_msg">Please connect to your network</string>
+
+    <string name="share">شارك</string>
+    <string name="share_text">شاهد الوظائف الجزئية عن طريقنا !!</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/linearLayout2">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBackForgot"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_80"
+            android:src="@drawable/back"
+    />
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/forgot_image"
+               android:layout_gravity="end"
+               android:layout_marginEnd="@dimen/dp_15"
+               android:layout_marginTop="-20dp"
+    />
+
+    <TextView
+            android:text="@string/forgot_caps"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_18"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:id="@+id/textView"
+    />
+    <TextView
+            android:textSize="@dimen/sp_16"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="@string/username_or_password"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textAlignment="viewStart"
+    />
+    <androidx.cardview.widget.CardView
+            android:padding="@dimen/dp_5"
+            app:cardCornerRadius="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_15"
+            app:cardElevation="@dimen/dp_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_15"
+    >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="2"
+                    android:paddingTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center"
+                        android:id="@+id/llForgotUserName"
+                        android:layout_weight=".90"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+                    <ImageView
+                            android:layout_marginLeft="@dimen/dp_2"
+                            android:background="@drawable/username_forgot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_10"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/or"
+                        android:layout_width="0dp"
+                        android:layout_weight=".20"
+                        android:layout_height="100dp"/>
+
+                <LinearLayout
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center"
+                        android:id="@+id/llForgotPassword"
+                        android:layout_weight=".90"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+                    <ImageView
+                            android:id="@+id/txtDummy2"
+                            android:layout_marginLeft="@dimen/dp_2"
+                            android:background="@drawable/password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textColor="@color/forgot_pass_text"
+                        android:textSize="@dimen/sp_12"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/username"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:textColor="@color/forgot_pass_text"
+                        android:textSize="@dimen/sp_12"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="@string/password"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

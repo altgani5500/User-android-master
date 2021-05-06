@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/User-android-master.iml" filepath="$PROJECT_DIR$/.idea/modules/User-android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/User-android-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/User-android-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calendarlib/User-android-master.calendarlib.iml" filepath="$PROJECT_DIR$/.idea/modules/calendarlib/User-android-master.calendarlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepickerlib/User-android-master.imagepickerlib.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepickerlib/User-android-master.imagepickerlib.iml" />
+    </modules>
+  </component>
+</project>

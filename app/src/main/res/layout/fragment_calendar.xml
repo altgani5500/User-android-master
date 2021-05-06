@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:flexible="http://schemas.android.com/apk/res-auto"
+             tools:context=".Fragments.CalendarFragment"
+             android:background="@color/white"
+             android:layout_marginBottom="@dimen/dp_10"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_45"
+                      android:orientation="horizontal"
+        >
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/txt_month_two"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/sp_12"
+                      android:gravity="center"
+                      android:textAllCaps="true"
+                      android:id="@+id/txtMonthOneCalendar"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/txt_month_one"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/sp_12"
+                      android:textAllCaps="true"
+                      android:gravity="center"
+                      android:id="@+id/txtMonthTwoCalendar"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/txt_month_two"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/sp_12"
+                      android:gravity="center"
+                      android:textAllCaps="true"
+                      android:id="@+id/txtMonthThreeCalendar"
+            />
+
+        </LinearLayout>
+
+        <com.p_v.flexiblecalendar.FlexibleCalendarView
+                android:layout_marginTop="@dimen/dp_5"
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+        />
+
+
+    </LinearLayout>
+
+</FrameLayout>

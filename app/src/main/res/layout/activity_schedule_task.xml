@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_10"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgBackScheduleTask"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_16"
+                  android:textAlignment="viewStart"
+                  android:text="@string/schedule_task"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutSchedduleTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/schedule_tab_selector"
+            android:elevation="@dimen/dp_3"
+            app:tabTextColor="@color/text_light"
+            app:tabSelectedTextColor="@color/blue"
+    />
+
+    <com.partime.user.helpers.CustomViewPager
+            android:id="@+id/viewPagerScheduleTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+    />
+
+</LinearLayout>

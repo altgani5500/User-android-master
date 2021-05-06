@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/mac/Downloads/User-android-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rES/values-es-rES.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/b7c62eac7c2d457e7753a93a5fc8a2b9/pingplacepicker-1.1.6/res/values-es-rES/values-es-rES.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,238,369,452,548,656,736,814,885,961,1030",
+                        "endColumns": "95,86,130,82,95,107,79,77,70,75,68,61",
+                        "endOffsets": "146,233,364,447,543,651,731,809,880,956,1025,1087"
+                    }
+                }
+            ]
+        }
+    ]
+}

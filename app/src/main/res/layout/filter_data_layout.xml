@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="@dimen/dp_10"
+              android:paddingBottom="@dimen/dp_10"
+              android:paddingEnd="@dimen/dp_10"
+              android:paddingStart="@dimen/dp_5"
+              android:gravity="center_vertical"
+              android:id="@+id/llFilters"
+>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:id="@+id/filterCheckBox"
+                        android:layout_alignParentStart="true">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/checkbox_gray"
+                       android:id="@+id/imgCheckBoxFilters"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_toEndOf="@id/filterCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/gray"
+                android:id="@+id/txtFilterData"
+                android:layout_alignParentStart="true"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

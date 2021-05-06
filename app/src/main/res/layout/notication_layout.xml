@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:paddingEnd="@dimen/dp_10"
+              android:paddingStart="@dimen/dp_10"
+    android:layout_margin="5dp"
+              android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgNotificationPic"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            app:civ_border_color="@color/view_color"
+            android:layout_marginTop="@dimen/dp_15"
+            app:civ_border_width="@dimen/dp_1"
+            android:src="@drawable/profile_placeholder"
+            android:elevation="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_15"
+
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginStart="@dimen/dp_15"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:textSize="@dimen/sp_14"
+                      android:textColor="@color/text_bg"
+                      android:textAlignment="viewStart"
+                      android:fontFamily="@font/montserrat_medium"
+                      android:id="@+id/txtNotifictionSenderName"
+
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/montserrat_regular"
+
+                      android:textSize="@dimen/sp_11"
+                      android:id="@+id/txtNotificationTime"
+
+            />
+
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textSize="@dimen/sp_12"
+                  android:layout_marginTop="@dimen/dp_10"
+                  android:textColor="@color/dark"
+                  android:layout_marginBottom="@dimen/dp_15"
+                  android:layout_marginStart="@dimen/dp_15"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:id="@+id/txtNotificationBody"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

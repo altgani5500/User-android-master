@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_10"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgBackAdvanceSett"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textAlignment="viewStart"
+                  android:text="@string/advanced_settings"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginEnd="@dimen/dp_10"
+                      android:layout_marginStart="@dimen/dp_10"
+                      android:layout_marginTop="@dimen/dp_20"
+                      android:orientation="vertical"
+                      android:layout_marginBottom="@dimen/dp_10"
+        >
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_bg"
+                    android:textSize="@dimen/sp_14"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/advance_text"
+                    android:layout_marginBottom="@dimen/dp_20"
+
+            />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/grades"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+
+
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchGrades"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/certificates"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+
+
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchCertificates"
+                />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/location"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchLocation"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/age"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchAge"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/educational_level"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchEducation"
+
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/company_worked_or_working"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchCompaniesWorked"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/gender"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:textColor="@color/gray"
+
+
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchGender"
+
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/cv"
+                          android:textSize="@dimen/sp_13"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:textColor="@color/gray"
+                />
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switchCv"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_10"
+                          android:background="@drawable/login_background"
+                          android:orientation="vertical"
+                          android:padding="@dimen/dp_15"
+                          android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/text_bg"
+                          android:textSize="@dimen/sp_14"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:text="@string/show_work_hours"
+                          android:layout_marginBottom="@dimen/dp_10"
+                />
+                <View android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_1"
+                      android:background="@color/view_color"
+                      android:layout_marginTop="@dimen/dp_5"
+                />
+
+                <RadioGroup android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:id="@+id/hoursRadioGroup"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:orientation="vertical"
+                >
+
+                    <RadioButton android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:text="@string/all"
+                                 android:textColor="@color/gray"
+                                 android:textAlignment="viewStart"
+                                 android:textSize="@dimen/sp_13"
+                                 android:fontFamily="@font/montserrat_regular"
+                                 android:id="@+id/radioBtnAll"
+                    />
+                    <RadioButton android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:textColor="@color/gray"
+                                 android:textAlignment="viewStart"
+                                 android:textSize="@dimen/sp_13"
+                                 android:fontFamily="@font/montserrat_regular"
+                                 android:text="@string/only_enterprise"
+                                 android:layout_marginTop="@dimen/dp_10"
+                                 android:id="@+id/radioBtnCompanyApplied"
+                    />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

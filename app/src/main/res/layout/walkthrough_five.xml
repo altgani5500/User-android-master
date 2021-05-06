@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/walkthrough_five">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_tiem_logs"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_20"
+                android:layout_marginTop="@dimen/dp_250"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="@dimen/desc_padding"
+                android:paddingEnd="@dimen/desc_padding"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/build_history_text"
+                android:textAlignment="center"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/slide_desc"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

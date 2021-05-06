@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mac/Downloads/User-android-master/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/enterprise_dialog_item.xml",
+        "source": "/Users/mac/Downloads/User-android-master/app/src/main/res/layout/enterprise_dialog_item.xml"
+    },
+    {
+        "merged": "/Users/mac/Downloads/User-android-master/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_image_row.xml",
+        "source": "/Users/mac/Downloads/User-android-master/app/src/main/res/layout/item_image_row.xml"
+    }
+]

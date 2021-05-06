@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:elevation="@dimen/dp_3"
+              android:background="@drawable/dialog_bg"
+              android:layout_marginStart="@dimen/dp_15"
+              android:layout_marginEnd="@dimen/dp_15"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/national_id_dialog"
+              android:gravity="center"
+              android:layout_marginEnd="@dimen/dp_35"
+              android:layout_marginStart="@dimen/dp_35"
+              android:fontFamily="@font/montserrat_regular"
+              android:textSize="@dimen/sp_14"
+              android:textColor="@color/text_bg"
+              android:layout_marginTop="@dimen/dp_20"/>
+
+    <Button android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/ok"
+            android:fontFamily="@font/montserrat_medium"
+            android:id="@+id/btnOkNationalDialog"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/dp_35"
+    />
+
+</LinearLayout>

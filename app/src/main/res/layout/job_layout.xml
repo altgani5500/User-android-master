@@ -1,0 +1,306 @@
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutJobList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/dp_8"
+            android:elevation="@dimen/dp_3"
+
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginStart="@dimen/dp_10"
+                      android:layout_marginEnd="@dimen/dp_10"
+                      android:paddingTop="@dimen/dp_10"
+        >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/sp_15"
+                          android:textAlignment="viewStart"
+                          android:fontFamily="@font/montserrat_semibold"
+                          android:id="@+id/txtJobListDesignation"
+                          android:textColor="@color/job_title"
+                />
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/dp_5"
+                           android:id="@+id/imgMapJob"
+                           android:paddingEnd="@dimen/dp_5"
+                           android:src="@drawable/google_map"
+                           android:layout_marginEnd="@dimen/dp_10"
+                />
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/dp_5"
+                           android:src="@drawable/share"
+                           android:layout_marginEnd="@dimen/dp_10"
+                           android:id="@+id/imgShareHome"
+                />
+
+<!--                <RelativeLayout android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content">-->
+
+<!--                    <ImageView android:layout_width="0dp"-->
+<!--                               android:layout_height="0dp"-->
+<!--                               android:src="@drawable/white_star"-->
+<!--                               android:padding="@dimen/dp_5"-->
+<!--                               android:id="@+id/imgSaveJob2"-->
+
+<!--                    />-->
+<!--&lt;!&ndash;                    <ImageView android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                               android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                               android:padding="@dimen/dp_5"&ndash;&gt;-->
+<!--&lt;!&ndash;                               android:src="@drawable/star_yellow"&ndash;&gt;-->
+<!--&lt;!&ndash;                               android:visibility="gone"&ndash;&gt;-->
+<!--&lt;!&ndash;                               android:id="@+id/imgUnSaveJob"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    />&ndash;&gt;-->
+<!--                </RelativeLayout>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/enterprise_logo"-->
+<!--                    android:layout_width="@dimen/dp_20"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginTop="@dimen/dp_5"-->
+<!--                   android:src="@drawable/app_icon"-->
+
+<!--                   />-->
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtJobListCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/company_name"
+                    android:textSize="@dimen/sp_14"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/job_details"
+                android:id="@+id/CreatingDate"
+                android:text="since 3 days ago"
+                android:textSize="@dimen/sp_12"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawableStart="@drawable/hourly_rate"
+                android:drawablePadding="@dimen/dp_5"
+                />
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/job_details"
+                      android:id="@+id/txtJobListLocation"
+                      android:textSize="@dimen/sp_12"
+                      android:textAlignment="viewStart"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:drawableStart="@drawable/branch_office"
+                      android:drawablePadding="@dimen/dp_5"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/job_details"
+                      android:id="@+id/txtJobListService"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:textSize="@dimen/sp_12"
+                      android:textAlignment="viewStart"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:drawableStart="@drawable/industry"
+                      android:drawablePadding="@dimen/dp_5"
+
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/job_details"
+                      android:id="@+id/txtJobListSalary"
+                      android:drawableStart="@drawable/hourly_rate"
+                      android:layout_marginTop="@dimen/dp_5"
+                      android:textSize="@dimen/sp_12"
+                      android:textAlignment="viewStart"
+                      android:fontFamily="@font/montserrat_regular"
+                      android:drawablePadding="@dimen/dp_5"
+            />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="bottom"
+                          android:layout_marginTop="@dimen/dp_5"
+                          android:id="@+id/llJobStatus"
+            >
+
+                <ImageView android:layout_width="@dimen/dp_22"
+                           android:layout_height="@dimen/dp_22"
+                           android:id="@+id/imgJobStatus"
+                           android:paddingBottom="@dimen/dp_5"
+
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/job_details"
+                          android:id="@+id/txtJobListStatus"
+                          android:textSize="@dimen/sp_12"
+                          android:textAlignment="viewStart"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:padding="@dimen/dp_2"
+
+                />
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/info"
+                           android:padding="@dimen/dp_5"
+                           android:id="@+id/imgJobInfo"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="bottom"
+                          android:layout_marginTop="@dimen/dp_5"
+                          android:id="@+id/llJobViewedStatus"
+                          android:visibility="invisible"
+            >
+
+                <ImageView android:layout_width="@dimen/dp_22"
+                           android:layout_height="@dimen/dp_22"
+                           android:id="@+id/imgJobViewedStatus"
+                           android:paddingBottom="@dimen/dp_5"
+
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/job_details"
+                          android:id="@+id/txtJobListViewedStatus"
+                          android:textSize="@dimen/sp_10"
+                          android:textAlignment="viewStart"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:padding="@dimen/dp_2"
+
+                />
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/contain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/imgUnSaveJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:background="@drawable/whiteb"
+                        android:drawableLeft="@drawable/ic_baseline_star_24"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/blue"
+                        android:text="@string/savedJob"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_25"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/imgSaveJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:background="@drawable/whiteb"
+android:drawableLeft="@drawable/ic_baseline_star_border_24"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/blue"
+                        android:text="@string/saveit"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_25"
+                        />
+
+                    <Button android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/applied_button"
+                        android:textSize="@dimen/sp_12"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:text="@string/applied"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:id="@+id/btnUnapplyJobList"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_25"
+                        />
+
+                    <Button android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/whiteb_apply"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/white"
+                        android:text="@string/apply"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:id="@+id/btnApplyJobList"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_25"
+                        />
+
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

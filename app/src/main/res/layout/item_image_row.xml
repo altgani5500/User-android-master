@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="@dimen/dp_10">
+
+        <ImageView
+                android:id="@+id/imgJobDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_placeholder"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/image_layout"
+        />
+
+    </RelativeLayout>
+
+</layout>

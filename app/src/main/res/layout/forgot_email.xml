@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBackForgotMain"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_80"
+            android:src="@drawable/back"
+    />
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/forgot_image"
+               android:layout_gravity="end"
+               android:layout_marginEnd="@dimen/dp_15"
+               android:layout_marginTop="-20dp"
+
+    />
+    <TextView
+            android:text="@string/forgot_caps"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_20"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textAlignment="viewStart"
+            android:id="@+id/textView"
+    />
+    <TextView
+            android:textSize="@dimen/sp_16"
+            android:text="@string/enter_your_registered_email"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textAlignment="viewStart"
+            android:layout_marginStart="@dimen/dp_15"
+    />
+    <androidx.cardview.widget.CardView
+            android:padding="@dimen/dp_5"
+            app:cardCornerRadius="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+
+            app:cardElevation="@dimen/dp_3"
+    >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="@dimen/dp_40"
+                          android:layout_marginTop="@dimen/dp_20"
+                          android:layout_marginBottom="@dimen/dp_5"
+                          android:background="@drawable/register_background"
+                          android:gravity="center_vertical"
+                          android:orientation="horizontal"
+            >
+
+                <EditText android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/sp_12"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:hint="@string/emaill"
+                          android:textAlignment="viewStart"
+                          android:inputType="textEmailAddress"
+                          android:id="@+id/edtForgotEmail"
+                          android:lines="1"
+                          android:maxLength="30"
+                          android:drawableStart="@drawable/email_id"
+                          android:drawablePadding="@dimen/dp_10"
+                          android:background="@null"
+                          android:layout_marginStart="@dimen/dp_8"
+
+                />
+
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/btnForgotSumitMail"
+                    android:textColor="@color/app_white"
+                    android:text="@string/submit"
+                    android:textSize="@dimen/sp_18"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

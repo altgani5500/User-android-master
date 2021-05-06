@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_15"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgBackUploadDoc"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_16"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:text="@string/resume"
+                  android:textAlignment="viewStart"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+        >
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/dp_10"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:padding="@dimen/dp_30"
+            >
+
+                <RelativeLayout android:layout_width="@dimen/dp_150"
+                                android:layout_height="@dimen/dp_150"
+                                android:background="@drawable/dotted_square"
+                                android:orientation="vertical"
+                                android:id="@+id/llCvResumeUpload"
+                >
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/upload_big"
+                               android:id="@+id/imgCv"
+                               android:layout_centerInParent="true"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/sp_13"
+                              android:layout_marginEnd="@dimen/dp_15"
+                              android:layout_marginStart="@dimen/dp_15"
+                              android:textAlignment="center"
+                              android:layout_marginTop="@dimen/dp_10"
+                              android:textColor="@color/text_light"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:id="@+id/txtCvUploadResume"
+                              android:layout_centerInParent="true"
+                              android:layout_below="@id/imgCv"
+                              android:visibility="gone"
+
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/sp_13"
+                              android:text="@string/upload_cv"
+                              android:layout_marginEnd="@dimen/dp_15"
+                              android:layout_marginStart="@dimen/dp_15"
+                              android:textAlignment="center"
+                              android:layout_marginTop="@dimen/dp_10"
+                              android:textColor="@color/text_light"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:id="@+id/txtCv"
+                              android:layout_centerInParent="true"
+                              android:layout_below="@id/imgCv"
+                    />
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/filter_cross"
+                               android:layout_alignParentEnd="true"
+                               android:padding="@dimen/dp_5"
+                               android:id="@+id/imgRemoveCv"
+                               android:visibility="gone"
+                    />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_15"
+            >
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="start"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:textSize="@dimen/sp_13"
+                          android:text="@string/upload_max_ceritifactes"
+                          android:textStyle="bold"
+                          android:textColor="@color/gray"
+                          android:layout_marginBottom="@dimen/dp_15"
+
+                />
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                >
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llOneCertificate"
+                                    android:orientation="vertical"
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgOne"
+                                   android:layout_centerInParent="true"
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateOne"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossOne"
+                        />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llTwoCertificate"
+                                    android:orientation="vertical"
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgTwo"
+                                   android:layout_centerInParent="true"
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateTwo"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossTwo"
+
+                        />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llThreeCertificate"
+                                    android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgThree"
+                                   android:layout_centerInParent="true"
+
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateThree"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossThree"
+
+                        />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:background="@drawable/dotted_square"
+                                    android:id="@+id/llFourCertificate"
+                                    android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgFour"
+                                   android:layout_centerInParent="true"
+
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateFour"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossFour"
+
+                        />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/dp_10"
+                >
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llFiveCertificate"
+                                    android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgFive"
+                                   android:layout_centerInParent="true"
+
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateFive"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossFive"
+                        />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llSixCertificate"
+                                    android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgSix"
+                                   android:layout_centerInParent="true"
+
+                        />
+
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateSix"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossSix"
+
+                        />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dp_70"
+                            android:background="@drawable/dotted_square"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:id="@+id/llSevenCertificate"
+                            android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgSeven"
+                                   android:layout_centerInParent="true"
+
+                        />
+
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateSeven"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossSeven"
+
+
+                        />
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="@dimen/dp_70"
+                                    android:background="@drawable/dotted_square"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/llEightCertificate"
+                                    android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgEight"
+                                   android:layout_centerInParent="true"
+
+                        />
+
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateEight"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossEight"
+
+                        />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/dp_10"
+                              android:paddingBottom="@dimen/dp_25"
+                >
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dp_70"
+                            android:background="@drawable/dotted_square"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:id="@+id/llNineCertificate"
+                            android:orientation="vertical"
+
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgNine"
+                                   android:layout_centerInParent="true"
+
+                        />
+
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateNine"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossNine"
+
+                        />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dp_70"
+                            android:background="@drawable/dotted_square"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:id="@+id/llTenCertificate"
+                            android:orientation="vertical"
+
+                    >
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/resume"
+                                   android:id="@+id/imgTen"
+                                   android:layout_centerInParent="true"
+
+
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:visibility="gone"
+                                  android:textAlignment="center"
+                                  android:padding="@dimen/dp_5"
+                                  android:textColor="@color/text_light"
+                                  android:textSize="@dimen/sp_11"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:id="@+id/txtCertificateTen"
+                                  android:layout_centerInParent="true"
+
+                        />
+                        <ImageView android:layout_width="@dimen/dp_18"
+                                   android:layout_height="@dimen/dp_18"
+                                   android:src="@drawable/filter_cross"
+                                   android:layout_alignParentEnd="true"
+                                   android:padding="@dimen/dp_5"
+                                   android:visibility="gone"
+                                   android:id="@+id/imgCrossTen"
+
+                        />
+
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_weight="1"
+                                  android:visibility="invisible"
+                                  android:layout_height="@dimen/dp_70"
+                                  android:background="@drawable/dotted_square"
+                                  android:gravity="center"
+                                  android:layout_marginEnd="@dimen/dp_10"
+                    >
+
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_weight="1"
+                                  android:visibility="invisible"
+                                  android:layout_height="@dimen/dp_70"
+                                  android:background="@drawable/dotted_square"
+                                  android:gravity="center"
+                                  android:layout_marginEnd="@dimen/dp_10"
+                    >
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/dp_15"
+              android:layout_marginEnd="@dimen/dp_15"
+              android:elevation="@dimen/dp_3"
+              android:background="@drawable/dialog_bg"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="@dimen/dp_10"
+    >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/dp_15"
+                  android:layout_marginStart="@dimen/dp_10"
+                  android:layout_marginEnd="@dimen/dp_10"
+                  android:textAlignment="viewStart"
+                  android:text="@string/reason_dialog_title"
+                  android:textColor="@color/text_bg"
+                  android:fontFamily="@font/montserrat_regular"
+        />
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="@dimen/dp_100"
+                  android:textSize="@dimen/sp_14"
+                  android:gravity="start"
+                  android:padding="@dimen/dp_10"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:layout_marginStart="@dimen/dp_10"
+                  android:layout_marginEnd="@dimen/dp_10"
+                  android:layout_marginTop="@dimen/dp_15"
+                  android:hint="@string/type_here"
+                  android:textAlignment="viewStart"
+                  android:inputType="textMultiLine|textCapSentences|textImeMultiLine"
+                  android:background="@drawable/register_background"
+                  android:layout_marginBottom="@dimen/dp_10"
+                  android:id="@+id/edtReasonDialog"
+
+        />
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginStart="@dimen/dp_10"
+                      android:layout_marginEnd="@dimen/dp_10"
+                      android:layout_gravity="center_vertical"
+        >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/attach_image"
+                      android:textSize="@dimen/sp_13"
+                      android:textColor="@color/text_bg"
+                      android:drawableStart="@drawable/attach"
+                      android:drawablePadding="@dimen/dp_5"
+                      android:padding="@dimen/dp_5"
+                      android:id="@+id/imgAttachReasonDialog"
+            />
+
+        </LinearLayout>
+
+        <ImageView android:layout_width="@dimen/dp_45"
+                   android:layout_height="@dimen/dp_60"
+                   android:layout_marginStart="@dimen/dp_10"
+                   android:layout_marginTop="@dimen/dp_5"
+                   android:layout_marginEnd="@dimen/dp_10"
+                   android:padding="@dimen/dp_5"
+                   android:background="@drawable/edittext_bg"
+                   android:id="@+id/imgReasonDialog"
+        />
+
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="@dimen/dp_30"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/submit"
+                android:layout_marginEnd="@dimen/dp_25"
+                android:layout_marginStart="@dimen/dp_25"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/dp_35"
+                android:id="@+id/btnSubmitReasonDialog"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

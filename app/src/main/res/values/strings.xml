@@ -1,0 +1,495 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">User</string>
+
+    <string name="agree">yes</string>
+    <string name="notAgree">cancle</string>
+    <string name="TextOk">Do you want apply the job</string>
+
+    <string name="network_wifi">WIFI NOT CONNECTED WITH NETWORK</string>
+    <string name="processdone">Process has done</string>
+    <string name="nearjobs"> NEARBY JOBS </string>
+    <string name="callus">call us</string>
+    <string name="savedJob">saved</string>
+    <string name="send">send us</string>
+    <string name="loginButton">login</string>
+    <!--KtAlert Class-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--permission util class message-->
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_denied">Storage permission denied. You can enable permission from settings</string>
+    <string name="prmission_alert">App needs this permission to store files on phone\'s storage. Are you sure you want
+        to deny this permission ?
+    </string>
+    <string name="camera_permission">App needs this permission to capture photos using phone\'s camera. Are you sure you
+        want to deny this permission ?
+    </string>
+    <string name="location_permission">App needs this permission to access your location. Are you sure you want to deny
+        this permission ?
+    </string>
+    <!--permissions-->
+    <string name="grant">Grant</string>
+    <string name="deny">Deny</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="pick_pdf">Pick Pdf</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <!--walkthrough-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+
+    <string name="slide_one_title">VIEW PART TIME JOBS</string>
+    <string name="slide_one_desc">View all the part time jobs available in your area</string>
+
+    <string name="slide_two_title">CHAT WITH ENTERPRISES</string>
+    <string name="slide_two_desc">You can contact enterprises offering part time jobs</string>
+
+    <string name="slide_three_title">VIEW WORKING SCHEDULE</string>
+    <string name="slide_three_desc">You can view working schedule and hours along with chatting with the scheduler
+    </string>
+
+    <string name="slide_four_title">VIEW ASSIGNED TASKS</string>
+    <string name="slide_four_desc">You can view all task"'"s status</string>
+
+    <string name="build_history">BUILD MY HISTORY</string>
+    <string name="build_history_text">Your history will show enterprises your adherence to the work environment</string>
+    <string name="view_tiem_logs">VIEW &amp; RECORD MY TIMELOGS</string>
+    <string name="view_time_text">You can view your work records including working hours, tasks and evaluations</string>
+
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear
+        data
+    </string>
+    <string name="play_again">Play Again</string>
+
+    <string name="array_dot_active">Array dot active</string>
+    <string name="array_dot_inactive">Array dot not</string>
+
+
+    <!--validations-->
+    <string name="error_invalid_email">Please enter your email</string>
+    <string name="error_invalid_password">Please enter your password</string>
+    <string name="no_fname">Please enter your first name</string>
+    <string name="no_lname">Please entre your last name</string>
+    <string name="no_email">Please enter your email</string>
+    <string name="no_nationality">Please select your nationality</string>
+    <string name="no_national_id">Please enter your National Id</string>
+    <string name="valid_national_id">Please enter a valid National Id</string>
+    <string name="no_user_name">Please enter your username</string>
+    <string name="national_id_exist">National ID already exist</string>
+    <string name="no_gender">Please select your gender</string>
+    <string name="no_password">Please enter your password</string>
+    <string name="no_confrim_password">Please confirm the password</string>
+    <string name="no_profile_image">Please upload your picture</string>
+    <string name="invalid_password">Password should contain at least 1 special character, 1 numeric value, 1 capital
+        letter and minimum length should be 6.
+    </string>
+    <string name="error_password_not_match">Password does not match</string>
+    <string name="no_confirmation">Please confirm your age</string>
+    <string name="no_agree">Please agree to our Terms and Conditions</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="deny_location_access">Please grant permissions to access your current location</string>
+
+    <string name="deny_wifi_access">Please grant permissions to access your wifi</string>
+    <!--login-->
+    <string name="login">LOG IN</string>
+    <string name="forgot">Forgot?</string>
+    <string name="no_account">Don"'"t have an account</string>
+    <string name="register_here">Register here!</string>
+    <string name="forgot_caps">FORGOT</string>
+    <string name="username_or_password">Username or Password?</string>
+    <string name="or">OR</string>
+
+    <!--register-->
+    <string name="register_header">LET"'"S START WITH</string>
+    <string name="register">REGISTER</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="nationality">Nationality</string>
+    <string name="national_id">National ID number</string>
+    <string name="email">Email ID</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="comfirmation">Confirming age above 16 years old</string>
+    <string name="agreement">I agree to</string>
+    <string name="terms_conditions">
+        <u>Terms &amp; Conditions</u>
+    </string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="submit">Submit</string>
+    <string name="submits">Submit</string>
+    <string name="submitss">Submit</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="login_here">Login here!</string>
+    <string name="note">*Note : Your national ID will not be shown to anyone. It is used only to avoid duplication
+        accounts.
+    </string>
+
+    <!-- msg strings-->
+    <string name="login_successful">Login successful</string>
+    <string name="signup_succcessful">Signup successful</string>
+
+    <string name="splash_text">Find the right partime job,make money ,build your working history and compete</string>
+
+    <!-- job list-->
+
+    <string name="apply">Apply</string>
+    <string name="saveit">save</string>
+    <string name="applied">Applied</string>
+    <string name="home">Home</string>
+    <string name="map_lable">Partime User</string>
+
+    <!--location permissions-->
+    <string name="no_location_permission">Please grant location permissions</string>
+    <string name="no_location_recorded">Please check your internet connection and turn on your location services
+    </string>
+    <string name="grant_location_permissions">Grant Location Permissions</string>
+
+    <!--job details-->
+    <string name="job_detail">Job Description</string>
+    <string name="details">Details</string>
+    <string name="applicants">Applicants</string>
+    <string name="job_title">Job title</string>
+    <string name="part_time_type">Part time type</string>
+    <string name="location">Location</string>
+    <string name="branch_name">Branch name</string>
+    <string name="description">Description</string>
+    <string name="currency">Currency</string>
+    <string name="number_of_applicants">Number of applicants</string>
+    <string name="hourly_rate">Hourly rate</string>
+    <string name="working_hours">Working hours</string>
+    <string name="total_hour_per_week">Total hour per week</string>
+    <string name="work_experience">Work experience</string>
+    <string name="requirement">Requirements</string>
+    <string name="benefits">Benefits</string>
+    <string name="work_guidelines">Working guidelines</string>
+    <string name="enterprise_detail">Enterprise Detail</string>
+    <string name="enterprise_name">Enterprise name</string>
+    <string name="enterprise_category">Enterprise category/industry</string>
+    <string name="enolled_partime_workers">Enrolled part time workers</string>
+    <string name="general_info">General info</string>
+    <string name="can_not_apply">You have already applied to this job</string>
+
+    <string name="viewed">Viewed</string>
+    <string name="new_job">New</string>
+    <string name="saved">Saved</string>
+    <string name="none_job">None</string>
+    <string name="none_of_these">None Of These</string>
+
+    <string name="job_saved">Saved job successfully</string>
+    <string name="job_unsaved">Unsaved job successfully</string>
+
+    <string name="apply_successful">Applied for the job successfully</string>
+    <string name="unapply_successcull">Unapplied for the job successfully</string>
+    <!-- side menu-->
+    <string name="saved_job">Saved jobs</string>
+    <string name="schedule_task">Schedule &amp; task</string>
+    <string name="time_logs">Time logs</string>
+    <string name="notifications">Notifications</string>
+    <string name="message">Message</string>
+    <string name="settings">Settings</string>
+    <string name="my_history">My history</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="logout">Logout</string>
+    <string name="login_msg">Get a part time account to keep exploring</string>
+
+    <!--contact us-->
+    <string name="name">Name</string>
+    <string name="describe_your_problem">Describe your problem</string>
+    <string name="type_here">Type here...</string>
+    <string name="send_message">Send message</string>
+    <string name="no_name">Please enter your name</string>
+    <string name="no_problem">Please enter your problem</string>
+
+    <string name="users">Users</string>
+    <string name="enterprise">Enterprise</string>
+
+    <string name="retry">Retry</string>
+    <string name="no_joblist">No Jobs Found</string>
+    <string name="credited">Credited</string>
+    <string name="credited_jobs">Credited Jobs</string>
+    <string name="non_credited_jobs">Non Credited Jobs</string>
+    <string name="exit_text">Please click back again to exit</string>
+
+    <string name="api_key">AIzaSyBImLrzprC80vF4RHbVEX62uOVZ3YTOJgU</string>
+
+    <!--profile-->
+    <string name="profile">Profile</string>
+    <string name="edit">Edit</string>
+    <string name="emaill">Email</string>
+    <string name="company_name">Company name</string>
+    <string name="educational_level">Educational level</string>
+    <string name="educational_detail">Educational Detail</string>
+    <string name="cv_or_certificates">CV/Certificates</string>
+    <string name="all_task">All tasks</string>
+    <string name="complete">Complete</string>
+    <string name="completed">Completed</string>
+    <string name="pending">Pending</string>
+    <string name="pending_evaluation">Pending Evaluation</string>
+    <string name="in_process">In Process</string>
+    <string name="total_work_history">Total of history</string>
+    <string name="past_companies">Past companies</string>
+    <string name="total_no_hours">Total no. of working Hours</string>
+
+    <!-- edit profile -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="address">Address</string>
+    <string name="address_note">*Sharing location takes you one step closer to get more opportunities.</string>
+    <string name="resume">Resume</string>
+    <string name="save">Save</string>
+    <string name="age">Age</string>
+    <string name="upload_cv">Upload CV</string>
+    <string name="upload_max_ceritifactes">Upload max 10 certificates.</string>
+    <string name="none">-</string>
+    <string name="pickdoc">Pick pdf</string>
+    <string name="resume_format">Please upload your resume in pdf format</string>
+
+    <string name="age_one">16-19</string>
+    <string name="age_two">20-25</string>
+    <string name="age_three">26-35</string>
+    <string name="age_four">36-60</string>
+
+    <string name="no_google_service">Google Play Services is not Available</string>
+    <string name="graduate">Graduate</string>
+    <string name="undergraduate">Undergraduate</string>
+    <string name="postgraduate">Post Graduate</string>
+
+    <string name="s_female">female</string>
+    <string name="s_male">male</string>
+
+    <!--settings-->
+    <string name="account_setting">Account settings</string>
+    <string name="notification">Notification</string>
+    <string name="advanced_settings">Advance settings</string>
+    <string name="app_update">App update</string>
+    <string name="add_work_network">Add work network</string>
+    <string name="change_language">Change Language</string>
+    <!--resign requist-->
+    <string name="resign_requist">Are you sure you want to send?</string>
+
+
+    <!--logout-->
+    <string name="logout_title">Are you sure you want to logout ?</string>
+    <string name="cancel">Cancel</string>
+
+    <!--change language-->
+    <string name="choose_lang">Choose Language</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+
+    <!--forgot-->
+    <string name="enter_your_registered_email">Enter your Registered Email Id</string>
+    <string name="invalid_email">Please enter a valid email</string>
+
+    <!--account settings-->
+    <string name="edit_email">Edit email</string>
+    <string name="change_national_id">Change national id</string>
+    <string name="change_password">Change password</string>
+    <string name="national_id_dialog">Please contact Partime Admin to edit/change your National ID</string>
+    <string name="ok">OK</string>
+    <string name="enter_old_password">Enter old password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+
+    <!--  notifactions-->
+    <string name="no_notification">There is no notification</string>
+
+    <!--advance settings-->
+    <string name="advance_text">The more you show, the better chance you get a part time job.</string>
+    <string name="complete_profile">Complete profile</string>
+    <string name="grades">Grades</string>
+    <string name="certificates">Certificates</string>
+    <string name="company_worked_or_working">Companies worked/currently working at</string>
+    <string name="show_work_hours">Show work hours</string>
+    <string name="all">All</string>
+    <string name="only_enterprise">Only to enterprise I apply to</string>
+    <string name="gender">Gender</string>
+    <string name="cv">CV</string>
+
+    <!--filters-->
+    <string name="filter">Filter</string>
+    <string name="industry">Industry</string>
+    <string name="hours_per_week">Hours per week</string>
+    <string name="hour_paid_rate">Hour paid rate</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="reset">Reset</string>
+    <string name="non_credited">Non credited</string>
+    <string name="search">Search</string>
+    <string name="select_all">Select all</string>
+    <string name="none_hour_rate">None</string>
+
+    <!--location filter-->
+    <string name="autoDetectLocation">Autodetect location</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="select_country">Select a country</string>
+    <string name="select_state">Select a state</string>
+    <string name="service_not_available">Unable to locate your address</string>
+
+    <!--Change password-->
+    <string name="no_old_passowrd">Please enter your old password</string>
+
+    <!--message-->
+    <string name="no_message">Your message list in empty</string>
+
+    <!--chat-->
+    <string name="save_to_calendar">Save to calendar</string>
+    <string name="type_msg">Type a message here</string>
+    <string name="interview_date">Interview date:</string>
+    <string name="interview_time">Interview time:</string>
+
+    <!--upload document-->
+    <string name="delete">Delete</string>
+
+    <string name="permanently_delete_file">The file will be deleted permanently. Are you sure you want to delete the
+        attachment
+    </string>
+
+    <string name="no_data_found">No data found</string>
+
+    <!--info dailog-->
+    <string name="credited_text">Your working hours including punch in/out logs and tasks will be recorded.</string>
+
+    <string name="non_credited_text">Your working hours inculding punch in/out logs and tasks will not be recorded.
+    </string>
+
+    <!--notification settings-->
+    <string name="notifiction_settings">Notification settings</string>
+    <string name="job_update">Job Update</string>
+    <string name="task">Task</string>
+    <string name="schedule_update">Schedule update</string>
+
+    <!-- /////////////////////////////     M4     //////////////////////-->
+
+    <!-- schedule tasks-->
+    <string name="task_list">Task list</string>
+    <string name="calendar_view">Calendar view</string>
+    <string name="not_enrolled">You are not enrolled in any job.</string>
+
+    <string name="list">List</string>
+    <string name="empty_task_list">Your task list is empty</string>
+    <string name="time_boound">Time bound</string>
+    <string name="time_bound">Time Bound</string>
+    <string name="continous">Continuous</string>
+
+    <!--calendar view-->
+    <string name="calendar">Calendar !</string>
+    <string name="task_name">Task name</string>
+    <string name="task_type">Task type</string>
+    <string name="scheduler">Scheduler</string>
+    <string name="rating">Rating</string>
+    <string name="reschedule_request">Reschedule request</string>
+    <string name="revaluation">Revaluation</string>
+    <string name="reevaluation">ReEvaluation</string>
+    <string name="rescheduled">Rescheduled</string>
+    <string name="interview">Interview</string>
+    <string name="clariifcation">Clarification</string>
+    <string name="group_chat">Group chat</string>
+
+    <!-- task History-->
+    <string name="task_history">Task history</string>
+
+
+    <!--Time log-->
+    <string name="time_log_history">Time log history</string>
+    <string name="reason_dialog_title">Reason for leaving early/punching in late</string>
+    <string name="attach_image">Attach image</string>
+    <string name="no_reason">Please enter a reason</string>
+
+    <!--//month names-->
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+
+    <string name="total_hours_worked">Total hours worked</string>
+    <string name="week">Week</string>
+
+    <string name="hours_out_of">Hours out of</string>
+    <string name="hours">Hours</string>
+
+    <string name="weekly_hours">Weekly hours</string>
+    <string name="date">Date</string>
+    <string name="actual_schedule">Actual schedule</string>
+    <string name="punch_in">Punch in</string>
+    <string name="punch_out">Punch out</string>
+    <string name="time_calculation">Time calculations</string>
+    <string name="accepted">Accepted</string>
+    <string name="early_hour">Early hour</string>
+    <string name="undecided">Undecided</string>
+    <string name="reason">Reason</string>
+    <string name="declined">Declined</string>
+    <string name="rejected">Rejected</string>
+    <string name="late_hour">Late Hour</string>
+    <string name="registeration_request">Resignation Request</string>
+
+    <string name="resignation_request">Resignation request</string>
+    <string name="resignation_sent">Resignation request sent</string>
+    <!--M4 add network-->
+    <string name="searching_wifi">Searching Wi-fi network</string>
+    <string name="available_network">Available Network</string>
+    <string name="turn_on_wifi">Please turn on your Wi-Fi</string>
+    <string name="no_wifi_list">No Wifi Networks</string>
+    <string name="wifi">Wi-fi</string>
+
+    <!-- my history-->
+    <string name="overall_analytics">Overall analytics</string>
+    <string name="all_tasks_assigned">All tasks assigned</string>
+
+
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May</string>
+    <string name="jun">Jun</string>
+    <string name="jul">Jul</string>
+    <string name="aug">Aug</string>
+    <string name="sep">Sep</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+
+
+    <!--task detail-->
+    <string name="task_detail">Task detail</string>
+    <string name="execution_date_time">Execution date &amp; time</string>
+    <string name="creation_date_time">Creation date &amp; time</string>
+    <string name="done">Done</string>
+    <string name="reschedule_request_sent">Reschedule request sent</string>
+    <string name="revaluate">Re evaluate</string>
+    <string name="start_task">Start</string>
+
+
+    <!-- add work network-->
+    <string name="enabling_wifi">Wifi is disabled..making it enabled</string>
+    <string name="connect_to_wifi">Please connect to</string>
+    <string name="network">Network</string>
+
+    <string name="no_network_msg">Please connect to your network</string>
+
+    <string name="share">Share</string>
+    <string name="share_text">View partime job with PARTIME !!</string>
+    <string name="title_activity_view_schedule" translatable="false">ViewScheduleActivity</string>
+
+
+</resources>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:id="@+id/llHistoryHeader"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_15"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgBackHistory"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_16"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:text="@string/my_history"
+                  android:textAlignment="viewStart"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/llHistoryHeader"
+
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:visibility="gone"
+                      android:id="@+id/llHistoryScroll"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/dp_5"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/sp_14"
+                          android:textColor="@color/text_bg"
+                          android:fontFamily="@font/montserrat_semibold"
+                          android:padding="@dimen/dp_5"
+                          android:text="@string/overall_analytics"
+                          android:layout_marginStart="@dimen/dp_5"
+                />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/sp_14"
+                          android:textColor="@color/text_light"
+                          android:fontFamily="@font/montserrat_regular"
+                          android:padding="@dimen/dp_5"
+                          android:drawableEnd="@drawable/dropdown"
+                          android:drawablePadding="@dimen/dp_5"
+                          android:layout_marginStart="@dimen/dp_5"
+                          android:id="@+id/txtYearHistory"
+                />
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/dp_1"
+                  android:background="@color/view_color"
+                  android:layout_margin="@dimen/dp_5"
+
+            />
+
+            <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:id="@+id/lineChartHistory"
+            />
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    android:elevation="@dimen/dp_3"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:id="@+id/cardAllTaksHistory"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+
+                >
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/dp_10"
+                                  android:layout_marginStart="@dimen/dp_10"
+                                  android:layout_marginEnd="@dimen/dp_10"
+                                  android:gravity="center_vertical"
+                    >
+
+                        <View android:layout_width="@dimen/dp_5"
+                              android:layout_height="@dimen/dp_5"
+                              android:background="@drawable/green_circle"
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/all_task"
+                                  android:fontFamily="@font/montserrat_semibold"
+                                  android:textColor="@color/text_bg"
+                                  android:textSize="@dimen/sp_13"
+                                  android:layout_marginStart="@dimen/dp_10"
+                                  android:textAlignment="viewStart"
+
+                        />
+
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:textSize="@dimen/sp_16"
+                              android:text="@string/none"
+                              android:layout_marginTop="@dimen/dp_5"
+                              android:textColor="@color/profile_green"
+                              android:layout_marginStart="@dimen/dp_25"
+                              android:textAlignment="viewStart"
+                              android:id="@+id/txtAllTaskHistory"
+
+                    />
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="@dimen/dp_1"
+                          android:background="@color/view_color"
+                          android:layout_marginStart="@dimen/dp_15"
+                          android:layout_marginTop="@dimen/dp_10"
+                          android:layout_marginBottom="@dimen/dp_10"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginStart="@dimen/dp_15"
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_weight="1"
+                                      android:gravity="center_horizontal"
+                        >
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/complete"
+                                      android:fontFamily="@font/montserrat_semibold"
+                                      android:textColor="@color/profile_green"
+                                      android:textSize="@dimen/sp_11"
+                                      android:textAlignment="viewStart"
+
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="@dimen/dp_8"
+                                      android:fontFamily="@font/montserrat_regular"
+                                      android:textSize="@dimen/sp_14"
+                                      android:text="@string/none"
+                                      android:textColor="@color/text_light"
+                                      android:textAlignment="viewStart"
+                                      android:id="@+id/txtCompleteHistory"
+                            />
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_weight="1"
+                                      android:gravity="center_horizontal"
+                        >
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/pending"
+                                      android:fontFamily="@font/montserrat_semibold"
+                                      android:textColor="@color/profile_yellow"
+                                android:textSize="@dimen/sp_11"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="@dimen/dp_8"
+                                      android:fontFamily="@font/montserrat_regular"
+                                      android:textSize="@dimen/sp_14"
+                                      android:text="@string/none"
+                                      android:textAlignment="viewStart"
+                                      android:textColor="@color/text_light"
+                                      android:id="@+id/txtPendingHistory"
+                            />
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_weight="1"
+                                      android:gravity="center_horizontal"
+                                      android:layout_marginBottom="@dimen/dp_10"
+                        >
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/in_process"
+                                      android:fontFamily="@font/montserrat_semibold"
+                                      android:textColor="@color/profile_blue"
+                                android:textSize="@dimen/sp_11"
+                                      android:textAlignment="viewStart"
+
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="@dimen/dp_8"
+                                      android:text="@string/none"
+                                      android:fontFamily="@font/montserrat_regular"
+                                      android:textSize="@dimen/sp_14"
+                                      android:textColor="@color/text_light"
+                                      android:textAlignment="viewStart"
+                                      android:id="@+id/txtInProcessHistory"
+
+                            />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    android:elevation="@dimen/dp_3"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+
+                >
+
+                    <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/dp_10"
+                                  android:layout_marginStart="@dimen/dp_10"
+                                  android:layout_marginEnd="@dimen/dp_10"
+                                  android:gravity="center_vertical"
+                        android:id="@+id/llTotalWorkHistory"
+                    >
+
+                        <View android:layout_width="@dimen/dp_5"
+                              android:layout_height="@dimen/dp_5"
+                              android:background="@drawable/blue_circle"
+                        />
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/total_work_history"
+                                  android:fontFamily="@font/montserrat_semibold"
+                                  android:textColor="@color/text_bg"
+                                  android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"
+                                  android:layout_marginStart="@dimen/dp_10"
+                                  android:textAlignment="viewStart"
+
+                        />
+
+                        <TextView
+                            android:background="@drawable/whiteb_apply"
+                            android:id="@+id/txtPastHstory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/past_companies"
+                            android:layout_marginStart="@dimen/dp_10"
+                          android:padding="@dimen/dp_10"
+                            android:textSize="@dimen/sp_10"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/white"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:textSize="@dimen/sp_16"
+                              android:text="@string/none"
+                              android:layout_marginTop="@dimen/dp_5"
+                              android:textColor="@color/blue"
+                              android:layout_marginStart="@dimen/dp_25"
+                              android:textAlignment="viewStart"
+                              android:id="@+id/txtTotalWorkHistory"
+
+                    />
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:id="@+id/llTotalWorkHoursHistory"
+                    >
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_marginTop="@dimen/dp_10"
+                                      android:layout_marginStart="@dimen/dp_10"
+                                      android:layout_marginEnd="@dimen/dp_10"
+                                      android:gravity="center_vertical"
+                        >
+
+                            <View android:layout_width="@dimen/dp_5"
+                                  android:layout_height="@dimen/dp_5"
+                                  android:background="@drawable/magenta_circle"
+                            />
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/total_hours_worked"
+                                      android:fontFamily="@font/montserrat_semibold"
+                                      android:textColor="@color/text_bg"
+                                      android:textSize="@dimen/sp_13"
+                                      android:layout_marginStart="@dimen/dp_10"
+                                      android:textAlignment="viewStart"
+
+                            />
+
+                        </LinearLayout>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:fontFamily="@font/montserrat_regular"
+                                  android:textSize="@dimen/sp_16"
+                                  android:text="@string/none"
+                                  android:layout_marginTop="@dimen/dp_5"
+                                  android:textColor="@color/profile_magenta"
+                                  android:layout_marginStart="@dimen/dp_25"
+                                  android:textAlignment="viewStart"
+                                  android:id="@+id/txtTotalHourHistory"
+                                  android:layout_marginBottom="@dimen/dp_10"
+
+                        />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:visibility="gone"
+                  android:layout_centerInParent="true"
+                  android:id="@+id/llErrorHistory"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_15"
+                  android:textAlignment="center"
+                  android:layout_marginEnd="@dimen/dp_20"
+                  android:layout_marginStart="@dimen/dp_20"
+                  android:text="@string/no_internet"
+
+        />
+
+        <Button android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/button_background"
+                android:text="@string/retry"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginTop="@dimen/dp_35"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:id="@+id/btnRetryHistory"
+
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

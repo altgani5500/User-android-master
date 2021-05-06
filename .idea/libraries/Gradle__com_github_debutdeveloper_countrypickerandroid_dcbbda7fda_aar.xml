@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.debutdeveloper:countrypickerandroid:dcbbda7fda@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f884e1df6824dcc3ff26f34c9ee79f7/jetified-countrypickerandroid-dcbbda7fda/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f884e1df6824dcc3ff26f34c9ee79f7/jetified-countrypickerandroid-dcbbda7fda/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f884e1df6824dcc3ff26f34c9ee79f7/jetified-countrypickerandroid-dcbbda7fda/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:id="@+id/filterHeader"
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/black_back"
+                   android:layout_marginStart="@dimen/dp_10"
+                   android:padding="@dimen/dp_5"
+                   android:id="@+id/imgBackFilters"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp_16"
+                  android:textAlignment="viewStart"
+                  android:text="@string/filter"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@color/black"
+                  android:layout_marginStart="@dimen/dp_10"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/text_bg"
+                  android:textAlignment="viewStart"
+                  android:textSize="@dimen/sp_12"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:text="@string/reset"
+                  android:layout_marginStart="@dimen/dp_10"
+                  android:layout_marginEnd="@dimen/dp_10"
+                  android:padding="@dimen/dp_5"
+                  android:id="@+id/buttonResetFilters"
+
+        />
+
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/filterHeader"
+    >
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/dp_25"
+        >
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:id="@+id/llfiltersss"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:id="@+id/llIndustryFilter"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:layout_marginTop="@dimen/dp_15"
+                              android:gravity="center_vertical"
+                              android:orientation="vertical"
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/industry"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+
+                    />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterIndustries"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:orientation="vertical"
+                              android:id="@+id/llJobTitleFilter"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/job_title"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterJobTitles"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:orientation="vertical"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                              android:id="@+id/llCompanyFilter"
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/company_name"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterCompanies"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:orientation="vertical"
+                              android:id="@+id/llLocationFilter"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/location"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:background="@drawable/edittext_bg"
+                                  android:layout_marginTop="@dimen/dp_15"
+                                  android:padding="@dimen/dp_10"
+                                  android:visibility="gone"
+                                  android:id="@+id/llFilterCurrentAddressData"
+                    >
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                        >
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/text_bg"
+                                      android:fontFamily="@font/montserrat_regular"
+                                      android:textSize="@dimen/sp_11"
+                                      android:id="@+id/txtFilterCurrAddressLocationOne"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/text_light"
+                                      android:fontFamily="@font/montserrat_regular"
+                                      android:textSize="@dimen/sp_11"
+                                      android:id="@+id/txtFilterCurrAddressLocationTwo"
+                            />
+
+                        </LinearLayout>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/filter_cross"
+                                   android:id="@+id/imgFilterCrossCurrentLocation"
+                        />
+
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/sp_11"
+                              android:textColor="@color/text_bg"
+                              android:text="@string/country"
+                              android:visibility="gone"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:layout_marginTop="@dimen/dp_15"
+                              android:id="@+id/txtFilterCountry"
+
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterCountry"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/sp_11"
+                              android:textColor="@color/text_bg"
+                              android:text="@string/state"
+                              android:visibility="gone"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:layout_marginTop="@dimen/dp_15"
+                              android:id="@+id/txtFilterState"
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterStates"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/sp_11"
+                              android:textColor="@color/text_bg"
+                              android:text="@string/city"
+                              android:visibility="gone"
+                              android:fontFamily="@font/montserrat_regular"
+                              android:layout_marginTop="@dimen/dp_15"
+                              android:id="@+id/txtFilterCity"
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterCity"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:id="@+id/llHoursPerWeekFilter"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                              android:orientation="vertical"
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/hours_per_week"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+                    />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterHoursPerWeek"
+                    />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_15"
+                              android:id="@+id/llHourPaidFilter"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                              android:orientation="vertical"
+
+                >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/hour_paid_rate"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:fontFamily="@font/montserrat_regular"
+
+
+                    />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:id="@+id/recyclerFilterHoursRate"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_10"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                              android:id="@+id/llCheckCreditedFilter"
+                >
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_5"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/rlCreditedFilter"
+                    >
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/checkbox_gray"
+                                   android:id="@+id/imgCreditedFilter"
+
+                        />
+
+                    </RelativeLayout>
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/credited"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:fontFamily="@font/montserrat_regular"
+
+
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="@dimen/dp_5"
+                              android:background="@drawable/login_background"
+                              android:padding="@dimen/dp_10"
+                              android:layout_marginEnd="@dimen/dp_10"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                              android:id="@+id/llCheckNonCreditedFilter"
+
+                >
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp_5"
+                                    android:layout_marginEnd="@dimen/dp_10"
+                                    android:id="@+id/rlNonCreditedFilter"
+                    >
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/checkbox_gray"
+                                   android:id="@+id/imgNonCreditedFilter"
+
+                        />
+                    </RelativeLayout>
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="@string/non_credited"
+                              android:textColor="@color/gray"
+                              android:textSize="@dimen/sp_13"
+                              android:layout_marginStart="@dimen/dp_10"
+                              android:fontFamily="@font/montserrat_regular"
+
+
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginEnd="@dimen/dp_25"
+                    android:background="@drawable/button_background"
+                    android:text="@string/apply_filter"
+                    android:layout_alignParentBottom="true"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:id="@+id/btnApplyFilter"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:textSize="@dimen/sp_18"
+                    android:layout_below="@id/llfiltersss"
+
+
+            />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
